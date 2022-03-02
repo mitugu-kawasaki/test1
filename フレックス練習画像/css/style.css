@@ -1,32 +1,67 @@
 @charset "utf-8";
-.body .wrap .main .tenpura .menu {
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
     margin: 0;
     margin: 0;
     margin: 0;
     padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4c4c4c;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
 }
 
 .wrap {
     max-width: 960px;
     color: black;
     display: flex;
-    background-color: black;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
 }
-.main {
+h1 {
     font-size: 30px;
-    list-style: none;
-    margin-right: 250px;
 }
 .tenpura {
-    width: 960px;
     display: flex;
     list-style: none;
     font-size: 15px;
-    background-color: #fff;
 }
-.menu {
-    width: 100px;
-    height: 30px;
+.tenpura li {
+    padding: 10px;
     text-align: center;
     border-right: solid gray;
+}
+.tenpura li:last-child {
+    border-right: none;
+}
+@media screen and (max-width: 767px) {
+    .wrap {
+        display: block;
+    }
+    .tenpura {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    .tenpura li {
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
 }

@@ -24,6 +24,7 @@ a {
 }
 body {
     background-color: #eeee;
+    max-width: 960px;
 }
 h1 {
     color: green;

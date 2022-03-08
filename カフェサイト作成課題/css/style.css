@@ -1,0 +1,102 @@
+@charset "utf-8";
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ms 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+body {
+    margin: 0 auto;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.1% 2.91%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.pc_nav li {
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    width: 104px;
+    margin-right: 55px;
+}
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav li:last-child {
+    margin-right: 0;
+}
+.slider img {
+    width: 100%;
+}
+.brand {
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
+.fhoto {
+    display: flex;
+    width: 100%;
+}
+.event {
+    width: 1000px;
+    height: 200px;
+    border: solid 4px;
+    text-align: center;
+    font-size: 23px;
+}
+.footer_wrap {
+    display: flex;
+}

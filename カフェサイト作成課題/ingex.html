@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>カフェサイト</title>
         <link rel="stylesheet" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
+        <!-- ヘッダー -->
         <header>
             <div class="header_wrap">
                 <h1 class="logo">
@@ -25,73 +27,132 @@
                         <li>ACSEES</li>
                     </ul>
                 </nav>
+                <div class="sp_btn"><span></span></div>
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a></a>ABUT US</li>
+                        <li>MENU</li>
+                        <li>GALLAERY</li>
+                        <li>EVENT</li>
+                        <li>ACSEES</li>
+                    </ul>
+                </nav>
             </div>
             <div class="slider">
-                <img src="images/pc_first-100.jpg" alt="デザインカフェ" />
+                <picture>
+                    <source
+                        srcset="images/sp_main_vs_2@2x-100.jpg"
+                        media="(max-width:767px)"
+                    />
+                    )
+                    <img src="images/pc_first-100.jpg" alt="デザインカフェ" />
+                </picture>
             </div>
         </header>
-        <p>Have a happy day From a cup of coffee.</p>
-        <p>ハッピーに溢れる1日を 1杯のコーヒーから。</p>
-        <p>
-            毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ
+        <p class="text1">Have a happy day From a cup of coffee.</p>
+        <p></p>
+        <p class="concept">ハッピーに溢れる1日を<br />1杯のコーヒーから。</p>
+        <p class="concept_text">
+            毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br />
             足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
         </p>
-        <div class="brand">
-            <img src="images/about_us@2x-100.jpg" alt="デザインカフェ" />
-            <h2 class="about">
-                <img src="images/about_us@2x.png" alt="デザインカフェ" />
-                <p>私たちが提供する こだわりのコーヒー</p>
-                <p>
-                    サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                </p>
-            </h2>
-        </div>
-        <img src="images/menu@2x.png" alt="メニュー" />
-
-        <div class="main">
-            <div>
-                <img src="images/pc_menu_drink-100.jpg" alt="ドリンク" />
-                <h3>Drink</h3>
-                <p>
-                    ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
-                </p>
+        <h2 class="brand">
+            <div class="brand">
+                <img
+                    class="brand_fhoto"
+                    src="images/about_us@2x-100.jpg"
+                    alt="デザインカフェ"
+                />
+                <h3 class="about">
+                    <img src="images/about_us@2x.png" alt="デザインカフェ" />
+                    <p class="brand_concept">
+                        私たちが提供する<br />こだわりのコーヒー
+                    </p>
+                    <p class="brand_text">
+                        サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                    </p>
+                </h3>
             </div>
-            <div>
-                <img src="images/pc_menu_food-100.jpg" alt="フード" />
-                <h3>Food</h3>
-                <p>
-                    フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
-                </p>
-            </div>
-            <div>
-                <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ" />
-                <h3>Sweets</h3>
-                <p>
-                    スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
-                </p>
+        </h2>
+        <div class="menu">
+            <p class="menu_photo">
+                <img
+                    class="menu_photo"
+                    src="images/menu@2x.png"
+                    alt="メニュー"
+                />
+            </p>
+            <div class="main">
+                <div class="drink">
+                    <img src="images/pc_menu_drink-100.jpg" alt="ドリンク" />
+                    <h4>Drink</h4>
+                    <p>
+                        ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </p>
+                </div>
+                <div class="food">
+                    <img src="images/pc_menu_food-100.jpg" alt="フード" />
+                    <h4>Food</h4>
+                    <p>
+                        フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </p>
+                </div>
+                <div class="sweets">
+                    <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ" />
+                    <h4>Sweets</h4>
+                    <p>
+                        スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
+                    </p>
+                </div>
             </div>
         </div>
-        <img src="images/gallery@2x.png" alt="ギャラリー" />
-        <div class="photo">
-            <img src="images/pc_gallary_04-100.jpg" alt="ラテミルク" />
-            <img src="images/pc_gallary_03-100.jpg" alt="室内写真" />
-            <img src="images/pc_gallary_02-100.jpg" alt="壁メニュー表" />
-            <img src="images/pc_gallary_01-100.jpg" alt="コーヒー豆" />
+        <div class="gallery">
+            <p class="gallery_fhoto">
+                <img src="images/gallery@2x.png" alt="ギャラリー" />
+            </p>
+            <div class="photo">
+                <img src="images/pc_gallary_05-100.jpg" alt="雰囲気写真" />
+                <img src="images/pc_gallary_04-100.jpg" alt="ラテミルク" />
+                <img src="images/pc_gallary_03-100.jpg" alt="室内写真" />
+                <img src="images/pc_gallary_02-100.jpg" alt="壁メニュー表" />
+                <img src="images/pc_gallary_01-100.jpg" alt="コーヒー豆" />
+            </div>
         </div>
-        <img src="images/event@2x.png" alt="イベント" />
         <div class="event">
-            <p>2020.06.23 7月はイベント出店のため0/0お休みします</p>
-            <p>2020.03.15 春の新商品新発売。話題のあのブランドとコラボ</p>
-            <p>2020.02.06 コーヒーの日で30％OFFイベントを開催［3日間限定］</p>
+            <p class="event_photo">
+                <img src="images/event@2x.png" alt="イベント" />
+            </p>
+            <ul class="event_text">
+                <li>2020.06.23 7月はイベント出店のため0/0お休みします</li>
+                <li>2020.03.15 春の新商品新発売。話題のあのブランドとコラボ</li>
+                <li>
+                    2020.02.06 コーヒーの日で30％OFFイベントを開催［3日間限定］
+                </li>
+            </ul>
         </div>
-        <img src="images/access@2x.png" alt="アクセス" />
+        <div class="map">
+            <p class="access_photo">
+                <img
+                    class="access_photo"
+                    src="images/access@2x.png"
+                    alt="アクセス"
+                />
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6487.069740100042!2d139.68252742480513!3d35.614538492899186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f52bc5bc212d%3A0xde5a7838ce0a474a!2z44CSMTUyLTAwMTMg5p2x5Lqs6YO955uu6buS5Yy65Y2X!5e0!3m2!1sja!2sjp!4v1647012582777!5m2!1sja!2sjp"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
         <footer>
             <div class="footer_wrap">
                 <img
                     src="images/design_cafe_logo_footer@2x.png"
                     alt="デザインカフェ"
                 />
-                <ul>
+                <ul class="footer_text">
                     <li>OPEN 18:00 / CLOSE 24:00</li>
                     <li>〒150-0022</li>
                     <li>東京都渋谷区東京南123デザインビルB1</li>
@@ -99,6 +160,19 @@
                 </ul>
             </div>
             <p>© 2021 DESIGN CAFE</p>
+            <div class="top_button">
+                <a href="#header"
+                    ><img src="images/to_top@2x.png" alt="ページトップ"
+                /></a>
+            </div>
         </footer>
+        <script>
+            $(function () {
+                $(".sp_btn,.sp_nav li").click(function () {
+                    $(".sp_nav").fadeToggle();
+                    $(".sp_btn").toggleClass("open");
+                });
+            });
+        </script>
     </body>
 </html>

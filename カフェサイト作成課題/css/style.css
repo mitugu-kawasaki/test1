@@ -55,6 +55,14 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 50;
+}
+.sp_nav {
+    display: none;
+}
+h1 {
+    width: 226px;
+    height: 50px;
 }
 .pc_nav li {
     color: #fff;
@@ -95,7 +103,7 @@ img {
 }
 .brand {
     align-items: center;
-    width: 1000px;
+    max-width: 100%;
     height: 660px;
     display: flex;
 }
@@ -151,7 +159,7 @@ h4 {
     padding-top: 40px;
 }
 .gallery {
-    width: 100%;
+    width: 1000px;
 }
 .gallery_fhoto {
     width: 245px;
@@ -166,8 +174,7 @@ h4 {
     padding: 0px;
 }
 .event {
-    width: 100%;
-    margin: 0 auto;
+    width: 1000px;
 }
 .event_photo {
     width: 173px;
@@ -232,6 +239,19 @@ iframe {
 }
 .sp_btn {
     display: none;
+}
+/* スライダー調整 */
+.slick-dots {
+    bottom: 5px;
+}
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+.slick-dots li button:before {
+    color: #fff;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -306,5 +326,11 @@ iframe {
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
             "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
         font-weight: bold;
+    }
+    .main {
+        display: block;
+    }
+    .main img {
+        display: none;
     }
 }
